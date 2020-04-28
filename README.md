@@ -1,2 +1,2 @@
 # .github
-default community health files
+Default community health files for Clinical Genomics organisation
