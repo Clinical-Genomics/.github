@@ -1,9 +1,12 @@
 ### This PR adds | fixes:
-
 - 
 
-### How to test:
+**How to prepare for test**:
+- [ ] `ssh` to ...
+- [ ] Install on stage:
+`bash servers/resources/SERVER.scilifelab.se/update-[THIS_TOOL]-stage.sh [THIS-BRANCH-NAME]`
 
+### How to test:
 -
 
 ### Expected outcome:
