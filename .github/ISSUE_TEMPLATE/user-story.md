@@ -1,7 +1,7 @@
 ---
 name: User story
 about: Template for user stories
-title: A short, descriptive title.
+title: 
 labels: User Story
 assignees: ''
 
@@ -33,11 +33,3 @@ Filled in by the Product Owner or the Stakeholders.
 - Additional information.
 - Dependencies.
 - Related user stories.
-
-# Implementation plan
-<!--
-This section will be populated by the developers during their technical refinements.
--->
-
-- [ ] Work item 1
-- [ ] Work item 2
