@@ -1,35 +1,97 @@
----
 name: User story
-about: Template for user stories
-title: 
-labels: User Story
-assignees: ''
+description: A feature request according to the MTP format.
+labels: ["User-Story"]
+body:
+  - type: textarea
+    attributes:
+      label: Need
+      description: Describe the need from the perspective of the user.
+      value: |
+        As a <role>,
+        I want <functionality>
+        because of <reason>.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Acceptance criteria
+      description: |
+        List the requirements needed for this feature to be implemented.
+        If you are unsure, apply the label "Needs Refinement" to the issue.
+      value: |
+        - [ ] <acceptance criterion>
+        - [ ] <acceptance criterion>
+    validations:
+      required: true
 
----
+  - type: textarea
+    attributes:
+      label: Traceability
+      description: How was the need for this feature identified?
+      value: |
+        - [ ] User feedback: <paste the message or link to the relevant ticket here>
+        - [ ] Deviation: <link to deviation>
+        - [ ] Other: <specify>
+    validations:
+      required: true
 
-<!--
-Filled in by the Product Owner or the Stakeholders.
--->
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: |
+        Please provide any information that can give us more context about this issue.
+      value: |
+        #### Suggested approach 
+        <!-- Any ideas on how this should be implemented? -->
 
-As a [type of user],
-I want [an action or feature],
-So that [benefit or reason].
+        #### Considered alternatives
+        <!-- Were there alternative approaches which have been rejected? -->
 
-# Acceptance Criteria
-<!--
-Filled in by the Product Owner or the Stakeholders.
--->
+        #### Blockers
+        <!-- Anything preventing this from happening? -->
 
-- [ ] Criteria 1
-- [ ] Criteria 2
-- [ ] Criteria 3
-...
+        #### Other notes
+        <!-- Links? References? -->
+    validations:
+      required: false
 
-# Notes
-<!--
-Filled in by the Product Owner or the Stakeholders.
--->
+  - type: textarea
+    attributes:
+      label: Product requirements
+      description: |
+        Does this feature change the product requirements?
+        Link to any system requirements added or changed, or motivate why no requirements are affected.
+      value: |
+        - [ ] Requirement(s) should be added: <requirement>
+        - [ ] Requirement(s) should be changed: <requirement and change>
+        - [ ] No requirements are affected because:
+           - [ ] This is already a requirement of the product.
+           - [ ] These changes do not affect the functionality of the product.
+           - [ ] Other: <reason>
+    validations:
+      required: true
 
-- Additional information.
-- Dependencies.
-- Related user stories.
+  - type: textarea
+    attributes:
+      label: Risk assessment
+      description: If a risk assessment is needed, link to it here. If not, motivate why not.
+      value: |
+        - [ ] A risk assessment is needed: <link to risk assessment>
+        - [ ] No risk assessment is need because:
+           - [ ] These changes do not affect the functionality of the product.
+           - [ ] Other: <reason>
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: SOUPs
+      description: |
+        Does this feature involve introduce or modify an SOUP(s)? If so, link to the SOUP(s) here.
+        If you are unsure, apply the label "Needs Refinement" to the issue.
+      value: |
+        - [ ] SOUP(s) should be added: <SOUPs>
+        - [ ] SOUP(s) should be changed: <requirement and change>
+        - [ ] No changes in SOUPs.
+    validations:
+      required: true
