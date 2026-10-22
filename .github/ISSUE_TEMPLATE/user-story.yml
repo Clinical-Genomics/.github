@@ -1,5 +1,5 @@
 name: User story
-description: A feature request according to the MTP format.
+description: Feature request according to the MTP format.
 labels: ["User-Story"]
 body:
   - type: textarea
@@ -8,8 +8,8 @@ body:
       description: Describe the need from the perspective of the user.
       value: |
         As a <role>,
-        I want <functionality>
-        because of <reason>.
+        I want <functionality>,
+        so that <reason>.
     validations:
       required: true
   - type: textarea
@@ -27,7 +27,7 @@ body:
   - type: textarea
     attributes:
       label: Traceability
-      description: How was the need for this feature identified?
+      description: Document [traceability](https://atlas.scilifelab.se/quality_assurance/ivdr_compliant_development/development_strategy/#document-traceability). How was the need for this feature identified?
       value: |
         - [ ] User feedback: <paste the message or link to the relevant ticket here>
         - [ ] Deviation: <link to deviation>
@@ -47,9 +47,6 @@ body:
         #### Considered alternatives
         <!-- Were there alternative approaches which have been rejected? -->
 
-        #### Blockers
-        <!-- Anything preventing this from happening? -->
-
         #### Other notes
         <!-- Links? References? -->
     validations:
@@ -59,7 +56,7 @@ body:
     attributes:
       label: Product requirements
       description: |
-        Does this feature change the product requirements?
+        Does this feature change the [product requirements](https://atlas.scilifelab.se/quality_assurance/ivdr_compliant_development/development_strategy/#5-requirements)?
         Link to any system requirements added or changed, or motivate why no requirements are affected.
       value: |
         - [ ] Requirement(s) should be added: <requirement>
@@ -74,7 +71,7 @@ body:
   - type: textarea
     attributes:
       label: Risk assessment
-      description: If a risk assessment is needed, link to it here. If not, motivate why not.
+      description: If a [risk assessment](https://atlas.scilifelab.se/quality_assurance/ivdr_compliant_development/development_strategy/#7-risk-analysis) is needed, link to it here. If not, motivate why not.
       value: |
         - [ ] A risk assessment is needed: <link to risk assessment>
         - [ ] No risk assessment is need because:
@@ -85,9 +82,9 @@ body:
 
   - type: textarea
     attributes:
-      label: SOUPs
+      label: SOUP(s)
       description: |
-        Does this feature involve introduce or modify an SOUP(s)? If so, link to the SOUP(s) here.
+        Does this feature involve introduce or modify an [SOUP(s)](https://atlas.scilifelab.se/quality_assurance/ivdr_compliant_development/development_strategy/#10-soups)? If so, link it here.
         If you are unsure, apply the label "Needs Refinement" to the issue.
       value: |
         - [ ] SOUP(s) should be added: <SOUPs>
