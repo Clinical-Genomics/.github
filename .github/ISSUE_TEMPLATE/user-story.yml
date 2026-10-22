@@ -18,7 +18,7 @@ body:
       description: |
         List the requirements needed for this feature to be implemented.
         If you are unsure, apply the label "Needs Refinement" to the issue.
-      value: |
+      value: |a
         - [ ] <acceptance criterion>
         - [ ] <acceptance criterion>
     validations:
@@ -84,7 +84,7 @@ body:
     attributes:
       label: SOUP(s)
       description: |
-        Does this feature involve introduce or modify an [SOUP(s)](https://atlas.scilifelab.se/quality_assurance/ivdr_compliant_development/development_strategy/#10-soups)? If so, link it here.
+        Does this feature involve introduce or modify a [SOUP(s)](https://atlas.scilifelab.se/quality_assurance/ivdr_compliant_development/development_strategy/#10-soups)? If so, link it here.
         If you are unsure, apply the label "Needs Refinement" to the issue.
       value: |
         - [ ] SOUP(s) should be added: <SOUPs>
